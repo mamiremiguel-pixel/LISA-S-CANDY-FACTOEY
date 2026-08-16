@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mamiremiguel-pixel.github.io/LISA-S-CANDY-FACTOEY/sitemap.xml
