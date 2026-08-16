@@ -1,0 +1,3092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lisa's Candy Factory | Mixed Sweets in Harare</title>
+
+<meta name="description"
+content="Lisa's Candy Factory is a Harare-based candy shop offering mixed sweets in convenient plastic packs, with smaller $0.50 packs and larger $1.00 packs, delivery, collection, promotions and NEXORA AI assistance.">
+
+<meta name="keywords"
+content="Lisa's Candy Factory, sweets, candy, Harare, Zimbabwe, mixed sweets, candy shop, Ceres Avenue">
+
+<meta name="author" content="Lisa's Candy Factory">
+
+<meta name="theme-color" content="#5c3b4b">
+
+<meta property="og:title"
+content="Lisa's Candy Factory">
+
+<meta property="og:description"
+content="Mixed sweets, promotions, delivery, collection and NEXORA AI.">
+
+<meta property="og:type" content="website">
+
+<style>
+
+:root{
+    --plum:#5c3b4b;
+    --plum-dark:#392630;
+    --rose:#b87991;
+    --gold:#c9a86a;
+    --cream:#fffaf4;
+    --cream2:#f7eee7;
+    --white:#ffffff;
+    --ink:#241b20;
+    --muted:#776b72;
+    --line:#eaded4;
+    --green:#557b65;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            #ead5dd,
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            var(--cream),
+            var(--cream2)
+        );
+
+    color:var(--ink);
+}
+
+button,
+input,
+select{
+    font:inherit;
+}
+
+button{
+    cursor:pointer;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:100;
+
+    background:#fffaf4ee;
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:
+        1px solid var(--line);
+}
+
+.nav{
+    max-width:1200px;
+    margin:auto;
+
+    min-height:70px;
+
+    padding:12px 22px;
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.brand{
+    font-family:Georgia,serif;
+
+    font-size:23px;
+
+    font-weight:900;
+
+    color:var(--plum);
+
+    margin-right:8px;
+}
+
+.tagline{
+    color:var(--muted);
+
+    font-size:10px;
+
+    margin-right:auto;
+}
+
+.nav button{
+    border:0;
+
+    background:transparent;
+
+    color:#62545b;
+
+    padding:9px 11px;
+
+    border-radius:9px;
+
+    font-size:11px;
+}
+
+.nav button:hover{
+    background:#f1e5dd;
+}
+
+.account-btn{
+    border:
+        1px solid var(--line)!important;
+
+    background:#fff!important;
+}
+
+.cart-btn{
+    background:var(--plum)!important;
+
+    color:#fff!important;
+}
+
+main{
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:
+        30px 22px
+        130px;
+}
+
+/* HERO */
+
+.hero{
+    min-height:530px;
+
+    border-radius:32px;
+
+    padding:55px;
+
+    display:grid;
+
+    grid-template-columns:
+        1.15fr
+        .85fr;
+
+    align-items:center;
+
+    gap:30px;
+
+    background:
+        radial-gradient(
+            circle at 85% 15%,
+            #d9bd7a66,
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f0dfd6
+        );
+
+    box-shadow:
+        0 25px 80px #4a2d3914;
+}
+
+.eyebrow{
+    font-size:10px;
+
+    font-weight:900;
+
+    letter-spacing:2px;
+
+    color:#91717d;
+}
+
+.hero h1{
+    font-family:Georgia,serif;
+
+    font-size:
+        clamp(
+            46px,
+            7vw,
+            84px
+        );
+
+    line-height:.94;
+
+    color:var(--plum);
+
+    margin:
+        15px 0;
+}
+
+.hero p{
+    max-width:600px;
+
+    line-height:1.8;
+
+    color:var(--muted);
+
+    font-size:15px;
+}
+
+.actions{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:25px;
+}
+
+.primary{
+    border:0;
+
+    background:var(--plum);
+
+    color:#fff;
+
+    padding:13px 20px;
+
+    border-radius:10px;
+}
+
+.secondary{
+    border:
+        1px solid var(--line);
+
+    background:#fff;
+
+    color:var(--plum);
+
+    padding:13px 20px;
+
+    border-radius:10px;
+}
+
+.hero-visual{
+    background:#ffffffbb;
+
+    border:
+        1px solid #ffffff;
+
+    border-radius:28px;
+
+    padding:30px;
+
+    box-shadow:
+        0 20px 50px #4a2d3912;
+
+    text-align:center;
+}
+
+.candy-orb{
+    width:210px;
+    height:210px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:grid;
+    place-items:center;
+
+    font:
+        900 65px Georgia;
+
+    color:#fff;
+
+    background:
+        radial-gradient(
+            circle at 32% 25%,
+            #fff,
+            #d6ad73 28%,
+            #8a5b6d 62%,
+            #4b303e 100%
+        );
+
+    box-shadow:
+        0 20px 70px #5c3b4b33;
+}
+
+.hero-visual h3{
+    margin-top:25px;
+
+    color:var(--plum);
+
+    font-family:Georgia,serif;
+}
+
+/* SECTIONS */
+
+.section{
+    padding:
+        70px 0
+        0;
+}
+
+.section-title{
+    font:
+        900 40px Georgia,serif;
+
+    color:var(--plum);
+
+    margin-bottom:8px;
+}
+
+.section-subtitle{
+    color:var(--muted);
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+}
+
+/* PRODUCTS */
+
+.product-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            1fr
+        );
+
+    gap:16px;
+}
+
+.product{
+    background:#fff;
+
+    border:
+        1px solid var(--line);
+
+    border-radius:18px;
+
+    padding:15px;
+
+    box-shadow:
+        0 12px 35px #4a2d390b;
+
+    transition:
+        transform .2s,
+        box-shadow .2s;
+}
+
+.product:hover{
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 20px 50px #4a2d3915;
+}
+
+.product-image{
+    height:155px;
+
+    border-radius:14px;
+
+    display:grid;
+
+    place-items:center;
+
+    font-size:62px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ead4d9,
+            #f3e1c1
+        );
+}
+
+.product h3{
+    color:var(--plum);
+
+    margin:
+        14px 0 5px;
+
+    font-size:15px;
+}
+
+.product-price{
+    color:var(--plum);
+
+    font-weight:900;
+
+    font-size:18px;
+}
+
+.product small{
+    color:var(--muted);
+
+    display:block;
+
+    margin-top:4px;
+}
+
+.product button{
+    width:100%;
+
+    margin-top:13px;
+
+    padding:10px;
+
+    border:0;
+
+    border-radius:9px;
+
+    background:var(--plum);
+
+    color:#fff;
+}
+
+/* PROMOTIONS */
+
+.promotion-box{
+    padding:28px;
+
+    border:
+        1px solid #e1c999;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff9eb,
+            #f6e8dc
+        );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+}
+
+/* NEWS */
+
+.news-card{
+    background:#fff;
+
+    border:
+        1px solid var(--line);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:
+        0 10px 30px #4a2d390a;
+}
+
+.news-badge{
+    display:inline-block;
+
+    background:#eee2e7;
+
+    color:var(--plum);
+
+    border-radius:20px;
+
+    padding:6px 10px;
+
+    font-size:9px;
+
+    font-weight:900;
+}
+
+.news-card h3{
+    color:var(--plum);
+
+    font-family:Georgia,serif;
+
+    font-size:25px;
+
+    margin:
+        15px 0 8px;
+}
+
+.news-card p{
+    color:var(--muted);
+
+    line-height:1.7;
+}
+
+/* QR */
+
+.qr-wrap{
+    display:grid;
+
+    grid-template-columns:
+        250px
+        1fr;
+
+    align-items:center;
+
+    gap:45px;
+
+    padding:35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff,
+            #f7eee7
+        );
+
+    border:
+        1px solid var(--line);
+
+    border-radius:26px;
+
+    box-shadow:
+        0 20px 60px #4a2d3912;
+}
+
+.qr-box{
+    background:#fff;
+
+    border:
+        1px solid var(--line);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:
+        0 12px 35px #0000000c;
+}
+
+.qr-box canvas{
+    display:block;
+
+    margin:auto;
+
+    max-width:100%;
+}
+
+.qr-caption{
+    margin-top:10px;
+
+    color:var(--plum);
+
+    font-weight:900;
+
+    font-size:11px;
+}
+
+.qr-info h3{
+    font:
+        900 40px Georgia,serif;
+
+    color:var(--plum);
+
+    margin:
+        10px 0;
+}
+
+.qr-info p{
+    color:var(--muted);
+
+    line-height:1.7;
+
+    max-width:560px;
+}
+
+.qr-url{
+    margin-top:15px;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    background:#f8f0ea;
+
+    color:#806e77;
+
+    font-size:9px;
+
+    word-break:break-all;
+}
+
+/* FOOTER */
+
+footer{
+    background:
+        var(--plum-dark);
+
+    color:#eee;
+
+    padding:50px 22px;
+}
+
+.footer{
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1fr;
+
+    gap:30px;
+}
+
+.footer h3{
+    color:#fff;
+
+    margin-bottom:13px;
+}
+
+.footer p,
+.footer button{
+    color:#cfc3c9;
+
+    font-size:11px;
+
+    line-height:1.8;
+}
+
+.footer button{
+    display:block;
+
+    border:0;
+
+    background:none;
+
+    padding:3px 0;
+}
+
+.footer-note{
+    max-width:1200px;
+
+    margin:
+        30px auto 0;
+
+    padding-top:20px;
+
+    border-top:
+        1px solid #ffffff1b;
+
+    color:#a99ba3;
+
+    font-size:9px;
+
+    line-height:1.7;
+}
+
+/* NEXORA */
+
+.nexora-button{
+    position:fixed;
+
+    right:22px;
+
+    bottom:22px;
+
+    z-index:200;
+
+    width:62px;
+    height:62px;
+
+    border:0;
+
+    border-radius:50%;
+
+    color:#fff;
+
+    font-weight:900;
+
+    background:
+        radial-gradient(
+            circle at 30% 25%,
+            #fff,
+            #d5b477 35%,
+            #5c3b4b 75%
+        );
+
+    box-shadow:
+        0 12px 40px #5c3b4b55;
+}
+
+.ai-panel{
+    position:fixed;
+
+    right:22px;
+
+    bottom:95px;
+
+    z-index:190;
+
+    width:
+        min(
+            410px,
+            calc(100vw - 30px)
+        );
+
+    height:570px;
+
+    display:none;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    background:
+        #fffaf4f7;
+
+    backdrop-filter:
+        blur(20px);
+
+    border:
+        1px solid var(--line);
+
+    border-radius:22px;
+
+    box-shadow:
+        0 30px 100px #0004;
+}
+
+.ai-panel.open{
+    display:flex;
+}
+
+.ai-header{
+    padding:14px 16px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5c3b4b,
+            #7b5365
+        );
+
+    color:#fff;
+}
+
+.ai-logo{
+    width:36px;
+    height:36px;
+
+    border-radius:50%;
+
+    display:grid;
+    place-items:center;
+
+    font-weight:900;
+
+    background:
+        radial-gradient(
+            circle,
+            #fff,
+            #d5b477 35%,
+            #5c3b4b 75%
+        );
+}
+
+.ai-header small{
+    opacity:.8;
+}
+
+.ai-close{
+    margin-left:auto;
+
+    border:0;
+
+    background:#ffffff1b;
+
+    color:#fff;
+
+    padding:6px 10px;
+
+    border-radius:7px;
+}
+
+.ai-capabilities{
+    padding:9px 12px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:5px;
+
+    border-bottom:
+        1px solid var(--line);
+}
+
+.ai-capabilities span{
+    font-size:8px;
+
+    padding:5px 8px;
+
+    border:
+        1px solid var(--line);
+
+    border-radius:20px;
+
+    background:#fff;
+}
+
+.ai-chat{
+    flex:1;
+
+    overflow-y:auto;
+
+    padding:12px;
+}
+
+.message{
+    max-width:88%;
+
+    margin:
+        8px 0;
+
+    padding:
+        10px 12px;
+
+    border-radius:13px;
+
+    font-size:10px;
+
+    line-height:1.6;
+}
+
+.message.ai{
+    background:#fff;
+
+    border:
+        1px solid var(--line);
+}
+
+.message.user{
+    margin-left:auto;
+
+    background:#eadde2;
+}
+
+.reasoning{
+    margin-top:7px;
+
+    padding:7px;
+
+    border-left:
+        2px solid var(--gold);
+
+    background:#faf4ed;
+
+    font-size:8px;
+
+    color:#756870;
+}
+
+.ai-chips{
+    padding:
+        0 12px 8px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:5px;
+}
+
+.ai-chips button{
+    border:
+        1px solid var(--line);
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:6px 8px;
+
+    font-size:8px;
+
+    color:var(--plum);
+}
+
+.ai-input{
+    padding:9px;
+
+    border-top:
+        1px solid var(--line);
+
+    display:flex;
+
+    gap:6px;
+}
+
+.ai-input input{
+    flex:1;
+
+    min-width:0;
+
+    border:
+        1px solid #dfd2c8;
+
+    border-radius:9px;
+
+    padding:9px;
+
+    outline:none;
+
+    background:#fff;
+}
+
+.ai-input button{
+    border:0;
+
+    background:var(--plum);
+
+    color:#fff;
+
+    border-radius:9px;
+
+    padding:
+        9px 11px;
+}
+
+.ai-input .mic{
+    background:#fff;
+
+    color:var(--plum);
+
+    border:
+        1px solid var(--line);
+}
+
+/* MODAL */
+
+.overlay{
+    position:fixed;
+
+    inset:0;
+
+    z-index:500;
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+
+    background:#160f14aa;
+}
+
+.overlay.open{
+    display:flex;
+}
+
+.modal{
+    width:
+        min(
+            650px,
+            96vw
+        );
+
+    max-height:90vh;
+
+    overflow:auto;
+
+    background:var(--cream);
+
+    border:
+        1px solid var(--line);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:
+        0 30px 100px #0006;
+}
+
+.modal-head{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-bottom:20px;
+}
+
+.modal-head h2{
+    color:var(--plum);
+
+    font-family:Georgia,serif;
+}
+
+.close{
+    border:0;
+
+    background:none;
+
+    font-size:25px;
+
+    color:#6b5962;
+}
+
+.form{
+    display:grid;
+
+    gap:10px;
+}
+
+.form input,
+.form select{
+    padding:11px;
+
+    border:
+        1px solid #dfd2c8;
+
+    border-radius:8px;
+
+    background:#fff;
+}
+
+.form button{
+    padding:11px;
+
+    border:0;
+
+    border-radius:8px;
+
+    background:var(--plum);
+
+    color:#fff;
+}
+
+.checkout-row{
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+    padding:9px 0;
+
+    border-bottom:
+        1px solid #eee;
+}
+
+.security-grid{
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:8px;
+}
+
+.security-item{
+    background:#fff;
+
+    border:
+        1px solid var(--line);
+
+    border-radius:10px;
+
+    padding:12px;
+
+    font-size:10px;
+}
+
+.security-item strong{
+    display:block;
+
+    color:var(--plum);
+
+    margin-bottom:5px;
+}
+
+/* TOAST */
+
+.toast{
+    position:fixed;
+
+    left:50%;
+
+    top:20px;
+
+    z-index:999;
+
+    transform:
+        translate(-50%,-20px);
+
+    opacity:0;
+
+    transition:.25s;
+
+    background:#2c2228;
+
+    color:#fff;
+
+    padding:
+        11px 16px;
+
+    border-radius:10px;
+
+    font-size:10px;
+}
+
+.toast.show{
+    opacity:1;
+
+    transform:
+        translate(-50%,0);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .hero{
+        grid-template-columns:1fr;
+
+        padding:40px 28px;
+    }
+
+    .product-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .footer{
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .qr-wrap{
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        justify-items:center;
+    }
+}
+
+@media(max-width:600px){
+
+    .nav{
+        overflow-x:auto;
+    }
+
+    .tagline{
+        display:none;
+    }
+
+    .nav button{
+        white-space:nowrap;
+    }
+
+    main{
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+    .hero{
+        border-radius:22px;
+
+        padding:
+            35px 22px;
+    }
+
+    .product-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer{
+        grid-template-columns:1fr;
+    }
+
+    .security-grid{
+        grid-template-columns:1fr;
+    }
+
+    .promotion-box{
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+
+<div class="nav">
+
+<div class="brand">
+Lisa's Candy Factory
+</div>
+
+<div class="tagline">
+Sweet moments, beautifully packed.
+</div>
+
+<button onclick="scrollToSection('shop')">
+Shop
+</button>
+
+<button onclick="scrollToSection('promotions')">
+Promotions
+</button>
+
+<button onclick="scrollToSection('updates')">
+Updates
+</button>
+
+<button
+class="account-btn"
+onclick="openAccount()">
+🔐 Account
+</button>
+
+<button
+class="cart-btn"
+onclick="openCart()">
+🛒 <span id="cartCount">0</span>
+</button>
+
+</div>
+
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div>
+
+<div class="eyebrow">
+LISA'S CANDY FACTORY × NEXORA AI
+</div>
+
+<h1>
+A sweeter way to shop.
+</h1>
+
+<p>
+Mixed sweets packed with care.
+Browse products, discover limited-time
+promotions, choose delivery or collection,
+and ask NEXORA for help navigating the store.
+</p>
+
+<div class="actions">
+
+<button
+class="primary"
+onclick="scrollToSection('shop')">
+Shop sweets
+</button>
+
+<button
+class="secondary"
+onclick="toggleAI()">
+Ask NEXORA ✦
+</button>
+
+</div>
+
+</div>
+
+
+<div class="hero-visual">
+
+<div class="candy-orb">
+L
+</div>
+
+<h3>
+Sweet. Simple. Local.
+</h3>
+
+<p
+style="
+font-size:11px;
+margin-top:8px;
+color:#766970;
+">
+Ceres Avenue · Harare · Zimbabwe
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SHOP -->
+
+<section
+class="section"
+id="shop">
+
+<h2 class="section-title">
+Shop sweets
+</h2>
+
+<p class="section-subtitle">
+Mixed sweets in plastic packs.
+Smaller packs are $0.50 and larger
+packs are $1.00.
+</p>
+
+<div
+class="product-grid"
+id="products">
+</div>
+
+</section>
+
+
+<!-- PROMOTIONS -->
+
+<section
+class="section"
+id="promotions">
+
+<h2 class="section-title">
+Promotions
+</h2>
+
+<p class="section-subtitle">
+Limited-time offers have their own category.
+</p>
+
+<div class="promotion-box">
+
+<div>
+
+<h3 style="color:#5c3b4b;">
+Holiday & sports-event specials
+</h3>
+
+<p
+style="
+margin-top:8px;
+color:#776b72;
+line-height:1.6;
+">
+When a promotion is active, its details
+will appear here. Promotions are not
+shown as normal products.
+</p>
+
+</div>
+
+<button
+class="secondary"
+onclick="showPromotions()">
+View promotions
+</button>
+
+</div>
+
+</section>
+
+
+<!-- NEWS -->
+
+<section
+class="section"
+id="updates">
+
+<h2 class="section-title">
+Latest news
+</h2>
+
+<div class="news-card">
+
+<span class="news-badge">
+LATEST NEWS
+</span>
+
+<h3>
+Lisa's Candy Factory partnership
+with NEXORA AI
+</h3>
+
+<p>
+Lisa's Candy Factory is integrating
+NEXORA AI as an in-store digital assistant.
+NEXORA helps customers navigate products,
+prices, promotions, ordering information,
+delivery, collection and website sections.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- QR -->
+
+<section
+class="section"
+id="qr-section">
+
+<h2 class="section-title">
+Scan & Shop
+</h2>
+
+<p class="section-subtitle">
+Scan the QR code to open Lisa's Candy Factory
+on your phone.
+</p>
+
+<div class="qr-wrap">
+
+<div class="qr-box">
+
+<div style="font-size:25px;margin-bottom:10px;">
+📱
+</div>
+
+<div id="qrCode"></div>
+
+<p class="qr-caption">
+Scan me
+</p>
+
+</div>
+
+
+<div class="qr-info">
+
+<div class="eyebrow">
+LISA'S CANDY FACTORY
+</div>
+
+<h3>
+Shop anywhere, anytime.
+</h3>
+
+<p>
+Once this website is published, the QR code
+will point to the live website address.
+</p>
+
+<div class="actions">
+
+<button
+class="primary"
+onclick="copyWebsiteAddress()">
+Copy website address
+</button>
+
+</div>
+
+<div
+class="qr-url"
+id="qrUrl">
+Preparing QR code…
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer">
+
+<div>
+
+<h3>
+Lisa's Candy Factory
+</h3>
+
+<p>
+Mixed sweets in plastic packs.
+</p>
+
+<p>
+Ceres Avenue, Harare, Zimbabwe
+</p>
+
+<p>
+0788777995
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Shop
+</h3>
+
+<button
+onclick="scrollToSection('shop')">
+Products
+</button>
+
+<button
+onclick="scrollToSection('promotions')">
+Promotions
+</button>
+
+<button
+onclick="openCart()">
+Basket & Checkout
+</button>
+
+</div>
+
+
+<div>
+
+<h3>
+Help
+</h3>
+
+<button onclick="openPrivacy()">
+Privacy
+</button>
+
+<button onclick="openTerms()">
+Terms & Copyright
+</button>
+
+<button onclick="openFeedback()">
+Feedback
+</button>
+
+</div>
+
+
+<div>
+
+<h3>
+NEXORA
+</h3>
+
+<button onclick="toggleAI()">
+Open AI assistant
+</button>
+
+<button onclick="openSecurity()">
+Security centre
+</button>
+
+</div>
+
+</div>
+
+
+<div class="footer-note">
+
+<strong>
+Production security notice:
+</strong>
+
+This front-end preview does not store passwords,
+card information or customer order data.
+
+A production checkout must use a secure backend,
+HTTPS, server-side validation, secure authentication,
+rate limiting and a trusted payment provider.
+
+</div>
+
+</footer>
+
+
+<!-- NEXORA BUTTON -->
+
+<button
+class="nexora-button"
+onclick="toggleAI()"
+title="Open NEXORA AI">
+N
+</button>
+
+
+<!-- NEXORA PANEL -->
+
+<div
+class="ai-panel"
+id="aiPanel">
+
+<div class="ai-header">
+
+<div class="ai-logo">
+N
+</div>
+
+<div>
+
+<b>
+NEXORA AI
+</b>
+
+<br>
+
+<small>
+Lisa's Candy Factory assistant
+</small>
+
+</div>
+
+<button
+class="ai-close"
+onclick="toggleAI()">
+×
+</button>
+
+</div>
+
+
+<div class="ai-capabilities">
+
+<span>Natural language</span>
+<span>Slang</span>
+<span>Context</span>
+<span>Voice</span>
+<span>Store navigation</span>
+
+</div>
+
+
+<div
+class="ai-chat"
+id="aiChat">
+
+<div class="message ai">
+
+<b>NEXORA</b>
+
+<br>
+
+Hey! ✦ Ask me about sweets,
+prices, promotions, delivery,
+collection, checkout, news,
+the store or anything about
+this website.
+
+</div>
+
+</div>
+
+
+<div class="ai-chips">
+
+<button
+onclick="quickAI('Show me the cheap sweets')">
+Cheap sweets
+</button>
+
+<button
+onclick="quickAI('Are there any promotions right now?')">
+Promotions
+</button>
+
+<button
+onclick="quickAI('How can I order?')">
+Order
+</button>
+
+<button
+onclick="quickAI('Where is Lisa’s Candy Factory?')">
+Location
+</button>
+
+</div>
+
+
+<div class="ai-input">
+
+<input
+id="aiInput"
+placeholder="Ask NEXORA anything…">
+
+<button
+class="mic"
+onclick="voiceAI()">
+🎙
+</button>
+
+<button onclick="sendAI()">
+Send
+</button>
+
+</div>
+
+</div>
+
+
+<!-- MODAL -->
+
+<div
+class="overlay"
+id="overlay">
+
+<div class="modal">
+
+<div class="modal-head">
+
+<h2 id="modalTitle">
+Lisa's Candy Factory
+</h2>
+
+<button
+class="close"
+onclick="closeModal()">
+×
+</button>
+
+</div>
+
+<div id="modalBody">
+</div>
+
+</div>
+
+</div>
+
+
+<div
+class="toast"
+id="toast">
+</div>
+
+
+<script>
+
+/* ==========================
+   STORE DATA
+========================== */
+
+const WEBSITE_URL =
+window.location.href.split("#")[0];
+
+
+const products = [
+
+{
+id:1,
+name:"Classic Mixed Sweet Pack",
+price:0.50,
+emoji:"🍬"
+},
+
+{
+id:2,
+name:"Big Mixed Sweet Pack",
+price:1.00,
+emoji:"🍭"
+},
+
+{
+id:3,
+name:"Rainbow Mix",
+price:0.50,
+emoji:"🌈"
+},
+
+{
+id:4,
+name:"Big Celebration Mix",
+price:1.00,
+emoji:"🎉"
+},
+
+{
+id:5,
+name:"Fruit Candy Mix",
+price:0.50,
+emoji:"🍓"
+},
+
+{
+id:6,
+name:"Big Party Sweet Pack",
+price:1.00,
+emoji:"🎈"
+},
+
+{
+id:7,
+name:"Holiday Mix",
+price:0.50,
+emoji:"🎄"
+},
+
+{
+id:8,
+name:"Sports Event Mix",
+price:1.00,
+emoji:"🏆"
+}
+
+];
+
+
+let cart=[];
+
+
+/* ==========================
+   HELPERS
+========================== */
+
+function money(value){
+
+return "$" +
+value.toFixed(2);
+
+}
+
+
+function scrollToSection(id){
+
+const element =
+document.getElementById(id);
+
+if(element){
+
+element.scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+}
+
+
+function showToast(message){
+
+const toast =
+document.getElementById("toast");
+
+toast.textContent=message;
+
+toast.classList.add("show");
+
+setTimeout(
+()=>{
+toast.classList.remove("show");
+},
+2200
+);
+
+}
+
+
+/* ==========================
+   PRODUCTS
+========================== */
+
+function renderProducts(){
+
+const container =
+document.getElementById("products");
+
+container.innerHTML =
+products.map(product => `
+
+<article class="product">
+
+<div class="product-image">
+${product.emoji}
+</div>
+
+<h3>
+${product.name}
+</h3>
+
+<div class="product-price">
+${money(product.price)}
+</div>
+
+<small>
+${product.price===1
+?"Larger pack"
+:"Smaller pack"}
+</small>
+
+<button
+onclick="addToCart(${product.id})">
+
+Add to basket
+
+</button>
+
+</article>
+
+`).join("");
+
+}
+
+
+function addToCart(id){
+
+const product =
+products.find(
+item=>item.id===id
+);
+
+if(!product) return;
+
+cart.push(product);
+
+document.getElementById(
+"cartCount"
+).textContent=cart.length;
+
+showToast(
+product.name+
+" added to basket"
+);
+
+}
+
+
+/* ==========================
+   CHECKOUT
+========================== */
+
+function openCart(){
+
+if(cart.length===0){
+
+openModal(
+"Basket",
+`
+
+<div
+style="
+padding:15px;
+background:#f7eee8;
+border:1px solid #eaded4;
+border-radius:10px;
+color:#776b72;
+">
+
+Your basket is currently empty.
+
+</div>
+
+`);
+
+return;
+
+}
+
+
+const total =
+cart.reduce(
+(sum,item)=>
+sum+item.price,
+0
+);
+
+
+const rows =
+cart.map(
+(item,index)=>`
+
+<div class="checkout-row">
+
+<span>
+${index+1}.
+${item.name}
+</span>
+
+<strong>
+${money(item.price)}
+</strong>
+
+</div>
+
+`
+).join("");
+
+
+openModal(
+"Checkout",
+`
+
+${rows}
+
+<h3
+style="
+color:#5c3b4b;
+margin:18px 0;
+">
+
+Total:
+${money(total)}
+
+</h3>
+
+
+<div class="form">
+
+<input
+placeholder="Full name"
+autocomplete="name">
+
+<input
+placeholder="Phone number"
+autocomplete="tel">
+
+<input
+placeholder="Delivery / collection address"
+autocomplete="street-address">
+
+
+<select>
+
+<option>
+Delivery
+</option>
+
+<option>
+Collection
+</option>
+
+</select>
+
+
+<select>
+
+<option>
+Pay online
+</option>
+
+<option>
+Pay upon delivery
+</option>
+
+</select>
+
+
+<button
+onclick="submitOrder()">
+
+Continue checkout
+
+</button>
+
+</div>
+
+<p
+style="
+font-size:9px;
+color:#8b7b82;
+margin-top:12px;
+">
+
+Online payment is not connected in this
+preview. A secure payment provider must
+be connected before accepting real payments.
+
+</p>
+
+`);
+
+}
+
+
+function submitOrder(){
+
+showToast(
+"Checkout preview completed"
+);
+
+closeModal();
+
+}
+
+
+/* ==========================
+   MODALS
+========================== */
+
+function openModal(title,body){
+
+document.getElementById(
+"modalTitle"
+).textContent=title;
+
+document.getElementById(
+"modalBody"
+).innerHTML=body;
+
+document.getElementById(
+"overlay"
+).classList.add("open");
+
+}
+
+
+function closeModal(){
+
+document.getElementById(
+"overlay"
+).classList.remove("open");
+
+}
+
+
+function openAccount(){
+
+openModal(
+"Customer Account",
+`
+
+<div class="form">
+
+<input
+type="email"
+placeholder="Email address"
+autocomplete="email">
+
+<input
+type="password"
+placeholder="Password"
+autocomplete="current-password">
+
+<button
+onclick="showToast('Demo sign-in submitted')">
+
+Sign in
+
+</button>
+
+<button
+onclick="showToast('Account registration preview')">
+
+Create account
+
+</button>
+
+</div>
+
+<p
+style="
+margin-top:12px;
+font-size:9px;
+color:#8b7b82;
+">
+
+Account authentication is a preview.
+Do not enter real passwords until a secure
+backend has been connected.
+
+</p>
+
+`);
+
+}
+
+
+function openPrivacy(){
+
+openModal(
+"Privacy Policy",
+`
+
+<p
+style="
+line-height:1.7;
+color:#776b72;
+">
+
+Lisa's Candy Factory should only collect
+customer information necessary for legitimate
+business purposes such as processing orders,
+delivery, collection, customer support and
+account management.
+
+</p>
+
+<br>
+
+<p
+style="
+line-height:1.7;
+color:#776b72;
+">
+
+Before launch, replace this preview with the
+business's final privacy policy covering data
+collection, storage, retention, cookies,
+third-party services and customer rights.
+
+</p>
+
+`);
+
+}
+
+
+function openTerms(){
+
+openModal(
+"Terms & Copyright",
+`
+
+<p
+style="
+line-height:1.7;
+color:#776b72;
+">
+
+© 2026 Lisa's Candy Factory.
+All rights reserved.
+
+</p>
+
+<br>
+
+<p
+style="
+line-height:1.7;
+color:#776b72;
+">
+
+The website's original design, text, branding
+and original content should not be copied,
+modified, redistributed or commercially reused
+without permission.
+
+</p>
+
+<br>
+
+<p
+style="
+line-height:1.7;
+color:#776b72;
+">
+
+Third-party libraries, services and materials
+remain subject to their respective licences.
+
+</p>
+
+`);
+
+}
+
+
+function openFeedback(){
+
+openModal(
+"Customer Feedback",
+`
+
+<div class="form">
+
+<input
+placeholder="Your name">
+
+<input
+type="email"
+placeholder="Your email">
+
+<select>
+
+<option>
+Product feedback
+</option>
+
+<option>
+Website feedback
+</option>
+
+<option>
+Delivery feedback
+</option>
+
+<option>
+NEXORA AI feedback
+</option>
+
+</select>
+
+<textarea
+placeholder="Tell us what you think..."
+style="
+min-height:120px;
+padding:11px;
+border:1px solid #dfd2c8;
+border-radius:8px;
+resize:vertical;
+">
+</textarea>
+
+<button
+onclick="showToast('Feedback preview submitted');closeModal()">
+
+Send feedback
+
+</button>
+
+</div>
+
+`);
+
+}
+
+
+function openSecurity(){
+
+openModal(
+"Security Centre",
+`
+
+<div class="security-grid">
+
+<div class="security-item">
+
+<strong>
+HTTPS
+</strong>
+
+Use HTTPS/TLS on the production
+website.
+
+</div>
+
+
+<div class="security-item">
+
+<strong>
+Secure authentication
+</strong>
+
+Use server-side password hashing
+and secure sessions.
+
+</div>
+
+
+<div class="security-item">
+
+<strong>
+Rate limiting
+</strong>
+
+Limit repeated login and API attempts.
+
+</div>
+
+
+<div class="security-item">
+
+<strong>
+Server validation
+</strong>
+
+Never trust browser-side validation alone.
+
+</div>
+
+
+<div class="security-item">
+
+<strong>
+Payment security
+</strong>
+
+Use a trusted payment provider rather
+than storing card details yourself.
+
+</div>
+
+
+<div class="security-item">
+
+<strong>
+Monitoring
+</strong>
+
+Log important security events and
+monitor suspicious activity.
+
+</div>
+
+</div>
+
+`);
+
+}
+
+
+document.getElementById(
+"overlay"
+).addEventListener(
+"click",
+event=>{
+
+if(
+event.target.id==="overlay"
+){
+
+closeModal();
+
+}
+
+}
+);
+
+
+/* ==========================
+   PROMOTIONS
+========================== */
+
+function showPromotions(){
+
+showToast(
+"No active promotions at the moment."
+);
+
+}
+
+
+/* ==========================
+   NEXORA AI
+========================== */
+
+function toggleAI(){
+
+document.getElementById(
+"aiPanel"
+).classList.toggle("open");
+
+}
+
+
+function normalise(text){
+
+return text
+.toLowerCase()
+.replace(/[’']/g,"'")
+.replace(/\bpls\b/g,"please")
+.replace(/\bplz\b/g,"please")
+.replace(/\brn\b/g,"right now")
+.replace(/\bgimme\b/g,"give me")
+.replace(/\bwht\b/g,"what")
+.replace(/\bwat\b/g,"what")
+.replace(/\bu\b/g,"you")
+.replace(/\bur\b/g,"your")
+.replace(/\bthx\b/g,"thanks")
+.replace(/\bty\b/g,"thanks")
+.replace(/\s+/g," ")
+.trim();
+
+}
+
+
+function escapeHTML(text){
+
+return String(text)
+.replace(/&/g,"&amp;")
+.replace(/</g,"&lt;")
+.replace(/>/g,"&gt;")
+.replace(/"/g,"&quot;")
+.replace(/'/g,"&#039;");
+
+}
+
+
+function addAIMessage(
+text,
+type="ai",
+reason=""
+){
+
+const chat =
+document.getElementById(
+"aiChat"
+);
+
+const message =
+document.createElement("div");
+
+message.className =
+"message "+type;
+
+message.innerHTML=`
+
+<b>
+${type==="user"
+?"YOU"
+:"NEXORA"}
+</b>
+
+<br>
+
+${escapeHTML(text)}
+
+${
+reason
+?
+`
+<div class="reasoning">
+
+${escapeHTML(reason)}
+
+</div>
+`
+:""
+}
+
+`;
+
+chat.appendChild(message);
+
+chat.scrollTop =
+chat.scrollHeight;
+
+}
+
+
+function getAIResponse(question){
+
+const q =
+normalise(question);
+
+
+/* GREETING */
+
+if(
+/\b(hi|hello|hey|yo|sup)\b/
+.test(q)
+){
+
+return [
+
+"Hey! ✦ What can I help you find in Lisa's Candy Factory?",
+
+"Detected a greeting."
+
+];
+
+}
+
+
+/* PRICES */
+
+if(
+
+/\b(price|cost|cheap|0\.50|50c|fifty|one dollar|\$1)\b/
+.test(q)
+
+&&
+
+/\b(sweet|candy|pack|product|buy|get)\b/
+.test(q)
+
+){
+
+return [
+
+"The smaller mixed sweet packs are $0.50 and the larger packs are $1.00.",
+
+"Detected a product-price question."
+
+];
+
+}
+
+
+/* PROMOTIONS */
+
+if(
+
+/\b(promo|promotion|promotions|sale|deal|deals|discount|offer|offers)\b/
+.test(q)
+
+){
+
+return [
+
+"I'll take you to the Promotions section. If there is no active promotion, the website will say so rather than inventing an offer.",
+
+"Detected promotion intent."
+
+];
+
+}
+
+
+/* ORDER */
+
+if(
+
+/\b(order|buy|basket|cart|checkout)\b/
+.test(q)
+
+){
+
+return [
+
+"Let's get your order started. Open the basket to see delivery, collection and checkout choices.",
+
+"Detected ordering intent."
+
+];
+
+}
+
+
+/* DELIVERY */
+
+if(
+
+/\b(delivery|deliver|shipping|collect|collection|pickup|pick up)\b/
+.test(q)
+
+){
+
+return [
+
+"You can choose delivery or collection during checkout.",
+
+"Detected fulfilment intent."
+
+];
+
+}
+
+
+/* PAYMENT */
+
+if(
+
+/\b(pay|payment|card|cash|money)\b/
+.test(q)
+
+){
+
+return [
+
+"The checkout preview includes online payment and pay-upon-delivery choices. Real online payment needs a secure payment provider before launch.",
+
+"Detected payment intent."
+
+];
+
+}
+
+
+/* LOCATION */
+
+if(
+
+/\b(where|address|location|located)\b/
+.test(q)
+
+){
+
+return [
+
+"Lisa's Candy Factory is listed at Ceres Avenue, Harare, Zimbabwe.",
+
+"Detected location intent."
+
+];
+
+}
+
+
+/* CONTACT */
+
+if(
+
+/\b(phone|number|contact|call)\b/
+.test(q)
+
+){
+
+return [
+
+"The listed contact number is 0788777995.",
+
+"Detected contact intent."
+
+];
+
+}
+
+
+/* NEWS */
+
+if(
+
+/\b(news|latest|update|updates|partnership)\b/
+.test(q)
+
+){
+
+return [
+
+"Latest news: Lisa's Candy Factory partnership with NEXORA AI. NEXORA is being integrated as the store's digital assistant.",
+
+"Detected news/update intent."
+
+];
+
+}
+
+
+/* NEXORA */
+
+if(
+
+/\b(who are you|what are you|what can you do)\b/
+.test(q)
+
+){
+
+return [
+
+"I'm NEXORA, the Lisa's Candy Factory store assistant. I can understand normal wording, common slang and imperfect typing, then guide you to relevant store information.",
+
+"Detected identity/capability request."
+
+];
+
+}
+
+
+/* THANKS */
+
+if(
+
+/\b(thanks|thank you|ty|thx)\b/
+.test(q)
+
+){
+
+return [
+
+"You're welcome! ✦",
+
+"Detected thanks."
+
+];
+
+}
+
+
+/* FALLBACK */
+
+return [
+
+"I can help with products, prices, promotions, orders, delivery, collection, payments, location, contact information, latest news and website navigation. Try asking naturally — you don't need to use exact commands.",
+
+"No high-confidence store intent was found, so I avoided making up information."
+
+];
+
+}
+
+
+function sendAI(){
+
+const input =
+document.getElementById(
+"aiInput"
+);
+
+const question =
+input.value.trim();
+
+if(!question) return;
+
+input.value="";
+
+addAIMessage(
+question,
+"user"
+);
+
+setTimeout(()=>{
+
+const [
+response,
+reason
+]=getAIResponse(question);
+
+addAIMessage(
+response,
+"ai",
+reason
+);
+
+const n =
+normalise(question);
+
+
+/* NAVIGATION */
+
+if(
+/\b(promo|promotion|sale|deal|offer|discount)\b/
+.test(n)
+){
+
+scrollToSection(
+"promotions"
+);
+
+}
+
+else if(
+
+/\b(sweet|candy|product|cheap|buy|get)\b/
+.test(n)
+
+){
+
+scrollToSection(
+"shop"
+);
+
+}
+
+else if(
+
+/\b(news|latest|update|partnership)\b/
+.test(n)
+
+){
+
+scrollToSection(
+"updates"
+);
+
+}
+
+},350);
+
+}
+
+
+function quickAI(question){
+
+document.getElementById(
+"aiInput"
+).value=question;
+
+sendAI();
+
+}
+
+
+document.getElementById(
+"aiInput"
+).addEventListener(
+"keydown",
+event=>{
+
+if(event.key==="Enter"){
+
+sendAI();
+
+}
+
+});
+
+
+/* ==========================
+   VOICE ASSISTANT
+========================== */
+
+function voiceAI(){
+
+const SpeechRecognition =
+window.SpeechRecognition ||
+window.webkitSpeechRecognition;
+
+if(!SpeechRecognition){
+
+showToast(
+"Voice recognition is not supported in this browser."
+);
+
+return;
+
+}
+
+const recognition =
+new SpeechRecognition();
+
+recognition.lang="en-ZW";
+
+recognition.interimResults=false;
+
+recognition.onstart=()=>{
+
+showToast(
+"NEXORA is listening…"
+);
+
+};
+
+recognition.onresult=event=>{
+
+const transcript =
+event.results[0][0].transcript;
+
+document.getElementById(
+"aiInput"
+).value=transcript;
+
+sendAI();
+
+};
+
+recognition.onerror=()=>{
+
+showToast(
+"I couldn't hear that clearly."
+);
+
+};
+
+recognition.start();
+
+}
+
+
+/* ==========================
+   QR CODE
+========================== */
+
+function loadQRCode(){
+
+const script =
+document.createElement(
+"script"
+);
+
+script.src=
+"https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js";
+
+script.onload=()=>{
+
+const holder =
+document.getElementById(
+"qrCode"
+);
+
+holder.innerHTML="";
+
+new QRCode(
+holder,
+{
+text:WEBSITE_URL,
+width:200,
+height:200,
+correctLevel:
+QRCode.CorrectLevel.M
+}
+);
+
+document.getElementById(
+"qrUrl"
+).textContent=
+WEBSITE_URL;
+
+};
+
+script.onerror=()=>{
+
+document.getElementById(
+"qrUrl"
+).textContent=
+"QR generator unavailable. Reload while connected to the internet.";
+
+};
+
+document.head.appendChild(
+script
+);
+
+}
+
+
+function copyWebsiteAddress(){
+
+if(
+navigator.clipboard
+){
+
+navigator.clipboard.writeText(
+WEBSITE_URL
+);
+
+}
+
+showToast(
+"Website address copied."
+);
+
+}
+
+
+/* ==========================
+   START
+========================== */
+
+renderProducts();
+
+loadQRCode();
+
+</script>
+
+</body>
+</html>
